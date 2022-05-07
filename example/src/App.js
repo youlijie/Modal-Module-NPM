@@ -4,7 +4,7 @@ import Modal from './Modal'
 
 const App = () => {
   return (
-    <Modal isModal = {isModal} content = {content} modalStyle = {modalStyle} />
+    <Modal isModalProp = {isModalProp} setIsModalProp = {setIsModalProp} content = {content} modalStyle = {modalStyle} />
   )
 }
 
