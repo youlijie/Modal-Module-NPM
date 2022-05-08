@@ -12,7 +12,7 @@ You need to import component
 ```JSX
 import Modal from "modal-module-thiw";
 
-<WhModal />
+<Modal />
 ```
 
 # Opening
