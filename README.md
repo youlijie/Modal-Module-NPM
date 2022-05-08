@@ -1,28 +1,73 @@
-# modal
+Custom modal for Wealth Health company.
 
-> Made with create-react-library
+# Installation
 
-[![NPM](https://img.shields.io/npm/v/modal.svg)](https://www.npmjs.com/package/modal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+You can install wh-modal with [npm](https://www.npmjs.com/package/modal-module-thiw)
 
-## Install
+`npm i modal-module-thiw`
 
-```bash
-npm install --save modal
+# Import
+
+You need to import component
+```JSX
+import Modal from "modal-module-thiw";
+
+<WhModal />
 ```
 
-## Usage
+# Opening
 
-```jsx
-import React, { Component } from 'react'
+The modal is invisible by default.
+To display the modal you must pass the value `open` to the argument `isModal={'open'}`
 
-import MyComponent from 'modal'
-import 'modal/dist/index.css'
+```JSX
+import Modal from "modal-module-thiw";
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+function MyComponent() {
+    return (
+        <>
+        <Modal isModal={'open'} />
+        </>
+    )
 }
+```
+
+# Closing
+
+To hide the modal you must pass the value `closed` to the argument `isModal={'closed'}` or click on the 'close' button directly on the modal.
+
+# Options
+
+To modify the content of modal you must use the argument `content={}`.
+To change the appearance of the modal you must pass an object to the argument `modalStyle={}`
+
+example :
+
+```JSX
+import Modal from "modal-module-thiw";
+
+function MyComponent() {
+    return (
+        <>
+        <Modal content={myContent} modalStyle={{backgroundColor: "red", justifyContent: "left"}} />
+        </>
+    )
+}
+```
+
+list of available style arguments :
+
+```CSS
+backgroundColor,
+fontSize,
+justifyContent,
+width,
+height,
+color,
+boderStyle,
+borderWidth,
+borderColor,
+borderRadius,
 ```
 
 ## License
