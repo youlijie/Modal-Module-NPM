@@ -8,9 +8,10 @@ You can install wh-modal with [npm](https://www.npmjs.com/package/modal-module-t
 
 # Import
 
-You need to import component
+You need to import component and CSS
 ```JSX
 import Modal from "modal-module-thiw";
+import "modal-module-thiw/dist-unminified/index.css";
 
 <Modal />
 ```
@@ -22,6 +23,7 @@ To display the modal you must pass the value `open` to the argument `isModal={'o
 
 ```JSX
 import Modal from "modal-module-thiw";
+import "modal-module-thiw/dist-unminified/index.css";
 
 function MyComponent() {
     return (
@@ -45,6 +47,7 @@ example :
 
 ```JSX
 import Modal from "modal-module-thiw";
+import "modal-module-thiw/dist-unminified/index.css";
 
 function MyComponent() {
     return (
