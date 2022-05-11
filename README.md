@@ -2,7 +2,7 @@ Custom modal for Wealth Health company.
 
 # Installation
 
-You can install wh-modal with [npm](https://www.npmjs.com/package/modal-module-thiw)
+You can install modal-module-thiw with [npm](https://www.npmjs.com/package/modal-module-thiw)
 
 `npm i modal-module-thiw`
 
