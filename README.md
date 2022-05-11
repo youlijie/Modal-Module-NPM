@@ -19,7 +19,7 @@ import "modal-module-thiw/dist-unminified/index.css";
 # Opening
 
 The modal is invisible by default.
-To display the modal you must pass the value `open` to the argument `isModal={'open'}`
+To display the modal you must pass the value `open` to the argument `setIsModalProp={'open'}`
 
 ```JSX
 import Modal from "modal-module-thiw";
@@ -28,7 +28,7 @@ import "modal-module-thiw/dist-unminified/index.css";
 function MyComponent() {
     return (
         <>
-        <Modal isModal={'open'} />
+        <Modal setIsModalProp={'open'} isModal={'open'} />
         </>
     )
 }
@@ -36,7 +36,7 @@ function MyComponent() {
 
 # Closing
 
-To hide the modal you must pass the value `closed` to the argument `isModal={'closed'}` or click on the 'close' button directly on the modal.
+To hide the modal you must pass the value `closed` to the argument `setIsModalProp={'closed'}` or click on the 'close' button directly on the modal.
 
 # Options
 
